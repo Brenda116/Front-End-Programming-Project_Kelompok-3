@@ -1,16 +1,6 @@
-:root {
-    --red: #821F06;
-    --green: #7d8d36;
-    --green-dark: #5C6925;
-}
-
 body {
-    margin: 0;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: var(--red);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: var(--red);
     height: 100vh;
 }
 

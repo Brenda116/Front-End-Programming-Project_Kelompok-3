@@ -1,0 +1,10 @@
+body {
+    background-color: var(--cream);
+}
+
+.logo {
+    width: 150px;
+    margin: 20px 24px;
+    height: auto;
+    position: absolute;
+}
