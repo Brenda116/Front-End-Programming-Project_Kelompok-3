@@ -62,6 +62,13 @@ body {
     width: 102%;
 }
 
+.logo {
+    width: 150px;
+    margin: 20px 24px;
+    height: auto;
+    position: absolute;
+}
+
 nav {
     display: flex;
     gap: 30px;

@@ -2,9 +2,26 @@ body {
     background-color: var(--cream);
 }
 
-.logo {
-    width: 150px;
-    margin: 20px 24px;
+.pizza-club {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+.pizza-club img {
+    width: 300px;
     height: auto;
-    position: absolute;
+}
+
+.high {
+    margin-top: 0;
+}
+
+.mid {
+    margin-top: 0;
+}
+
+.low {
+    margin-top: 0;
 }
