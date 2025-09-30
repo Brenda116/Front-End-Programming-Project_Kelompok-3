@@ -8,8 +8,11 @@
     --black: #131313;
 }
 
-body {
+html, body {
     margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100vh;
     font-family: 'Poppins';
     justify-content: center;
     align-items: center;
@@ -66,17 +69,18 @@ body {
     width: 150px;
     margin: 20px 24px;
     height: auto;
-    position: absolute;
+    position:relative;
+}
+
+header {
+    background-color: var(--red);
 }
 
 nav {
     display: flex;
     gap: 30px;
     justify-content: right;
-    margin-top: 50px;
     padding: 40px 55px;
-    background-color: var();
-    background-color: var(--red);
 }
 
 nav a {
