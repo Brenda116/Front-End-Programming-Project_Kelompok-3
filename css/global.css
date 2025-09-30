@@ -84,7 +84,6 @@ nav a {
 
 footer {
     justify-items: center;
-    margin-top: 24px;
     padding: 20px 24px;
     background-color: var(--red);
     color: var(--cream);
