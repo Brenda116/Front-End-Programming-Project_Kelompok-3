@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/pages/team.css">
+    <script src="js/team.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+            <img src="/image/logo.png" alt="NOTTE AZZURA" class="logo">
+            <nav>
+                <a href="#home" class="active">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#" id="logoutBtn">Logout</a>
+            </nav>
+    </header>
+
+    <!-- Team Header -->
+    <section class="team-header">
+        <h1>Meet Our Team</h1>
+        <p>We are a passionate group dedicated to delivering the best service and experience to our customers.</p>
+    </section>
+
+    <section class="team-section">
+    <!-- Dropdown Filter -->
+    <div class="team-filters">
+        <select id="teamFilter">
+            <option value="all">All</option>
+            <option value="internal">Internal Staff</option>
+            <option value="external">External Staff</option>
+            <option value="project">Project Members</option>
+        </select>
+
+        <!-- Toggle More/Hide -->
+        <button id="moreBtn" class="btn">More</button>
+    </div>
+    
+    <!-- Team Cards -->
+    <section class="team-container">
+
+        <div class="team-card" data-category="external project">
+            <img src="https://avatars.githubusercontent.com/u/204650288?v=4" alt="Brenda">
+            <h2>Brenda</h2>
+            <p class="role">Head Chef</p>
+            <p>Brenda brings creativity and excellence to every dish we serve.</p>
+        </div>
+
+        <div class="team-card" data-category="internal project">
+            <img src="https://avatars.githubusercontent.com/u/207448435?v=4" alt="Mark">
+            <h2>Mark</h2>
+            <p class="role">Marketing Lead</p>
+            <p>Mark ensures our brand reaches the right audience effectively.</p>
+        </div>
+
+        <div class="team-card" data-category="internal project">
+            <img src="https://avatars.githubusercontent.com/u/204651071?v=4" alt="Happy">
+            <h2>Happy</h2>
+            <p class="role">Customer Support</p>
+            <p>Happy guarantees smooth and delightful experiences for our customers.</p>
+        </div>
+
+        <div class="team-card" data-category="external project">
+            <img src="https://avatars.githubusercontent.com/u/190093295?v=4" alt="Shane">
+            <h2>Shane</h2>
+            <p class="role">Commis Chef</p>
+            <p>Shane assists the kitchen team in preparing high-quality dishes with precision and care.</p>
+        </div>
+
+        <div class="team-card" data-category="external project">
+            <img src="https://avatars.githubusercontent.com/u/202576480?v=4" alt="Kathleen">
+            <h2>Kathleen</h2>
+            <p class="role">Sous Chef</p>
+            <p>Kathleen assists in preparing authentic Italian dishes and perfect pizza doughs.</p>
+        </div>
+
+        <div class="team-card" data-category="internal">
+            <img src="https://i.pinimg.com/1200x/0d/64/98/0d64989794b1a4c9d89bff571d3d5842.jpg" alt="Teddy">
+            <h2>Teddy</h2>
+            <p class="role">Chef</p>
+            <p>Teddy works alongside our kitchen team, preparing dishes with skill and dedication to ensure the best dining experience for our guests.</p>
+        </div>
+
+        <div class="team-card" data-category="external">
+            <img src="https://i.pinimg.com/1200x/0d/64/98/0d64989794b1a4c9d89bff571d3d5842.jpg" alt="Liam">
+            <h2>Liam</h2>
+            <p class="role">Pizzaiolo</p>
+            <p>Liam is our pizza expert, creating artisanal pizzas with traditional Italian flavors.</p>
+        </div>
+
+        <div class="team-card" data-category="external">
+            <img src="https://i.pinimg.com/1200x/0d/64/98/0d64989794b1a4c9d89bff571d3d5842.jpg" alt="Diane">
+            <h2>Diane</h2>
+            <p class="role">Waiter</p>
+            <p>Diane ensures guests enjoy a warm and authentic Italian dining experience.</p>
+        </div>
+
+        <div class="team-card" data-category="external">
+            <img src="https://i.pinimg.com/1200x/0d/64/98/0d64989794b1a4c9d89bff571d3d5842.jpg" alt="Isabella">
+            <h2>Isabella</h2>
+            <p class="role">Bartender</p>
+            <p>Isabella crafts Italian wines, cocktails, and beverages to perfectly complement our menu.</p>
+        </div>
+
+        <div class="team-card" data-category="external">
+            <img src="https://i.pinimg.com/1200x/0d/64/98/0d64989794b1a4c9d89bff571d3d5842.jpg" alt="Zeon">
+            <h2>Zeon</h2>
+            <p class="role">Pastry Chef</p>
+            <p>Zeon creates traditional Italian desserts like tiramisu and cannoli for our guests.</p>
+        </div>
+
+        <div class="team-card" data-category="external">
+            <img src="https://i.pinimg.com/1200x/0d/64/98/0d64989794b1a4c9d89bff571d3d5842.jpg" alt="Elena">
+            <h2>Elena</h2>
+            <p class="role">Host</p>
+            <p>Elena welcomes guests with Italian hospitality and manages reservations smoothly.</p>
+        </div>
+
+        <div class="team-card" data-category="external">
+            <img src="https://i.pinimg.com/1200x/0d/64/98/0d64989794b1a4c9d89bff571d3d5842.jpg" alt="Niki">
+            <h2>Davide</h2>
+            <p class="role">Kitchen Assistant</p>
+            <p>Davide supports our chefs in prepping fresh ingredients for every pizza and dish.</p>
+        </div>
+
+        <div id="moreHint" class="more-hint">
+            Click the <strong>More</strong> button to see more of our members!
+        </div>
+
+    </section>
+</section>
+
+    <footer>
+        <p>&copy; 2025 NOTTE AZZURA | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
