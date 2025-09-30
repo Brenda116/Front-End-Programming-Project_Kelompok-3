@@ -250,3 +250,82 @@ html {
   color: var(--black);
   margin-bottom: 20px;
 }
+
+/* Mobile mode */
+@media (max-width: 768px) {
+  
+  /* Section Header About */
+  .about-split {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 5%;
+  }
+
+  .about-left {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .about-left .about-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Our Vision Section */
+  .about-vision {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 5%;
+  }
+
+  .vision-left, .vision-right {
+    flex: 1 1 100%;
+    min-width: auto;
+  }
+
+ .vision-right {
+    order: -1;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  /* Our History Section */
+  .about-history {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 5%;
+  }
+
+  .history-left, .history-right {
+    flex: 1 1 100%;
+    min-width: auto;
+  }
+
+  .history-left {
+    margin-bottom: 30px;
+  }
+
+  .about-left h1,
+  .vision-left h2,
+  .history-right h2 {
+    font-size: 2rem;
+  }
+
+  .about-left .desc,
+  .vision-left p,
+  .history-right p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .about-link {
+    width: 200px;
+    min-height: 100px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .about-link h2 {
+    font-size: 0.9rem;
+  }
+}
