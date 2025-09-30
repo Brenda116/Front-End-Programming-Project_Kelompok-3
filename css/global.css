@@ -73,7 +73,6 @@ nav {
     display: flex;
     gap: 30px;
     justify-content: right;
-    margin-top: 50px;
     padding: 40px 55px;
     background-color: var();
     background-color: var(--red);
