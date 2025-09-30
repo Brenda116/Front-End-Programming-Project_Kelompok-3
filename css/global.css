@@ -66,23 +66,23 @@ html, body {
 }
 
 .logo {
-    width: 150px;
+    width: 80px;
     margin: 20px 24px;
     height: auto;
-    position:relative;
+    position: relative;
 }
 
 header {
     background-color: var(--red);
-    position: absolute;
-    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
 }
 
 nav {
     display: flex;
     gap: 30px;
-    justify-content: right;
-    padding: 40px 55px;
+    align-items: center;
 }
 
 nav a {
