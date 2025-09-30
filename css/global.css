@@ -78,6 +78,7 @@ nav {
     background-color: var();
     background-color: var(--red);
 }
+
 nav a {
     color: var(--cream);
     text-decoration: none;

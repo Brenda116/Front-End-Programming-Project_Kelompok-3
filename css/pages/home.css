@@ -3,25 +3,27 @@ body {
 }
 
 .pizza-club {
+    margin-top: 200px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 80px;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .pizza-club img {
-    width: 300px;
+    width: 350px;
     height: auto;
 }
 
 .high {
     margin-top: 0;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .mid {
-    margin-top: 0;
+    margin-top: 60px;
 }
 
 .low {
-    margin-top: 0;
+    margin-top: 250px;
 }
