@@ -1,7 +1,7 @@
 /* Header Team */
 .team-header {
     text-align: center;
-    padding: 160px 20px 140px;
+    padding: 180px 20px 160px;
     background: 
     linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
     url('https://images.pexels.com/photos/6937428/pexels-photo-6937428.jpeg') no-repeat center center;
@@ -19,6 +19,69 @@
     max-width: 600px;
     margin: 0 auto;
     color: var(--cream);
+}
+
+/* Team Introduction Section */
+.team-intro {
+  background: var(--cream);
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.team-intro .intro-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.team-intro h2 {
+  font-size: 2.2rem;
+  color: var(--red);
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.team-intro p {
+  font-size: 1.1rem;
+  color: var(--black);
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.team-intro .intro-image {
+  flex: 1;
+  max-width: 700px;
+}
+
+.team-intro .intro-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* Divider Team Section */
+.team-divider {
+  background: var(--red);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  margin: 0 auto;
+}
+
+.team-divider h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.team-divider p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
 /* Team Section Background */
@@ -180,6 +243,43 @@
   0% { opacity: 0.5; transform: translateY(0); }
   50% { opacity: 1; transform: translateY(-3px); }
   100% { opacity: 0.5; transform: translateY(0); }
+}
+
+/* Join Our Team Section */
+.join-team {
+  background: var(--red);
+  color: var(--cream);
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 12px;
+  margin: 0px auto;
+}
+
+.join-team h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.join-team p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.join-team .btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: var(--cream);
+  color: var(--red);
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.join-team .btn:hover {
+  background: var(--red);
+  color: var(--cream);
+  border: 1px solid var(--cream);
 }
 
 /* Responsive dalam Mobile Mode */
