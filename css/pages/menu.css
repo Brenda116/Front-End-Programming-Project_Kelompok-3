@@ -13,8 +13,11 @@
 
 .menu-section {
     margin-bottom: 3rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    /* padding-left: 3rem;
+    padding-right: 3rem; */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .menu-section h2 {
@@ -33,10 +36,12 @@
     grid-template-columns: repeat(3, 400px); 
     gap: 2rem;
     justify-content: center;
+
+
 }
 
 .card {
-    background-color: #8E5845; 
+    background-color: var(--red); 
     color: #fff;
     border-radius: 25px;
     padding: 1.5rem;
@@ -74,7 +79,6 @@
     width: 100%;
     max-width: 300px;
     height: auto;
-    border-radius: 50%;
     margin-bottom: 1rem;
 }
 
@@ -99,6 +103,13 @@
     font-weight: 600;
     font-size: 1rem;
     display: inline-block;
+    text-align: center;
+}
+
+.card:hover .price {
+    background-color: var(--green);
+    color: var(--cream);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Beverages */
@@ -106,13 +117,16 @@
     position: relative;
     display: flex;
     align-items: center;
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .beverage-slider {
     display: flex;
     gap: 1.5rem;
     padding: 1.5rem;
-    background-color: #8E5845;
+    background-color: var(--red);
     border-radius: 25px;
 
     scroll-behavior: smooth; 
@@ -138,21 +152,21 @@
 }
 
 .slider-btn:hover {
-    background-color: #fff;
+    background-color: var(--green);
 }
 
 #prev-btn {
-    left: 10px;
+    left: -25px;
 }
 
 #next-btn {
-    right: 10px; 
+    right: -25px; 
 }
 
 .beverage-card{
     background-color: transparent;
-    padding: 0;
-
+    padding: 15px;
+    text-align: center;
     flex: 0 0 auto;
     width: 160px;
 }
@@ -164,17 +178,32 @@
     margin-bottom: 1rem;
 }
 
-.price {
-    background-color: var(--cream);
-    color: var(--black);
-    padding: 0.75rem 1.5rem;
-    border-radius: 20px;
-    font-weight: 600;
+.beverage-card p {
     font-size: 1rem;
-    display: inline-block;
-    width: 100%; 
-    box-sizing: border-box;
-    text-align: center;     
+    color: var(--cream);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.beverage-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    z-index: 10; 
+    padding: auto;
+    border-radius: 25px;
+    background-color: var(--cream);
+    transition: transform 0.3s ease; 
+}
+
+.beverage-card:hover p {
+    color: var(--red);
+    transition: color 0.3s ease;
+}
+
+.beverage-card:hover .price {
+    background-color: var(--green);
+    color: var(--cream);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 @media (max-width: 768px) {
