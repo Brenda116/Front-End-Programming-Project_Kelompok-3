@@ -8,14 +8,20 @@
     --black: #131313;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    height: 100vh;
-    font-family: 'Poppins';
-    justify-content: center;
-    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 .input {
@@ -30,7 +36,7 @@ html, body {
 
 .btn {
     background-color: var(--green);
-    color: #fff;
+    color: #FFFFFF;
     font-size: 1rem;
     border: none;
     border-radius: 8px;
@@ -48,7 +54,7 @@ html, body {
     padding: 8px;
     border-radius: 8px;
     margin-bottom: 10px;
-    font-size: 14px
+    font-size: 14px;
 }
 
 .notice.error {
@@ -69,36 +75,98 @@ html, body {
     width: 80px;
     margin: 20px 24px;
     height: auto;
-    position: relative;
 }
 
 header {
     background-color: var(--red);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-right: 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
 }
 
 nav {
     display: flex;
-    gap: 30px;
+    gap: 50px;
     align-items: center;
 }
 
 nav a {
     color: var(--cream);
     text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav a.active {
+    font-weight: bold;
+}
+
+#menu-icon {
+    font-size: 2rem;
+    color: var(--cream);
+    display: none;
+    cursor: pointer;
+    margin: 24px;
+}
+
+main {
+    flex: 1;
+    margin-top: 200px;
 }
 
 footer {
-    justify-items: center;
+    text-align: center;
     padding: 20px 24px;
     background-color: var(--red);
     color: var(--cream);
+    width: 100%;
 }
 
 @media (max-width: 768px) {
     .btn {
-        width: 108%;
+        width: 100%;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    header {
+        flex-wrap: wrap;
+        padding-right: 0;
+    }
+
+    nav {
+        top: 100%;
+        right: 0;
+        left: 0;
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 0;
+        gap: 15px;
+        align-items: center;
+        background: rgba(130, 31, 6, 0.7); 
+        backdrop-filter: blur(10px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        width: 80%;
+        text-align: center;
+        padding: 15px;
     }
 }

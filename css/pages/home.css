@@ -1,29 +1,47 @@
 body {
-    background-color: var(--cream);
+    background-image: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGYtczEyNS1ha2U3MDExLWEuanBn.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    color: var(--cream);
+    font-size: 50px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container p {
+    text-align: center;
+    color: var(--cream);
+    font-size: 40px;
+    margin: 10px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .pizza-club {
-    margin-top: 200px;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    height: 500px;
 }
 
 .pizza-club img {
     width: 350px;
     height: auto;
+    transition: all 0.8s ease;
+    position: absolute;
 }
 
-.high {
-    margin-top: 0;
-    margin-left: 40px;
-    margin-right: 40px;
-}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
 
-.mid {
-    margin-top: 60px;
-}
-
-.low {
-    margin-top: 250px;
+    .container p {
+        font-size: 24px;
+    }
 }
