@@ -24,13 +24,16 @@
     font-weight: 600;
 }
 
+.card-wrapper{
+
+}
 
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 400px); 
     gap: 2rem;
+    justify-content: center;
 }
-
 
 .card {
     background-color: #8E5845; 
@@ -41,11 +44,35 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    z-index: 10; 
+}
+
+.card .details {
+    opacity: 0; 
+    max-height: 0;
+    overflow: hidden; 
+    margin: 0; 
+    
+    transition: all 0.4s ease-out; 
+}
+
+.card:hover .details {
+    opacity: 1; 
+    max-height: 100px;
+    margin-bottom: 1rem;
 }
 
 .card-img {
     width: 100%;
-    max-width: 200px;
+    max-width: 300px;
     height: auto;
     border-radius: 50%;
     margin-bottom: 1rem;
@@ -74,6 +101,88 @@
     display: inline-block;
 }
 
+/* Beverages */
+.slider-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.beverage-slider {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background-color: #8E5845;
+    border-radius: 25px;
+
+    scroll-behavior: smooth; 
+    overflow-x: hidden;      
+}
+
+.slider-btn {
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    z-index: 10; 
+
+    background-color: rgba(255, 255, 255, 0.8); 
+    border: none;
+    border-radius: 50%; 
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.slider-btn:hover {
+    background-color: #fff;
+}
+
+#prev-btn {
+    left: 10px;
+}
+
+#next-btn {
+    right: 10px; 
+}
+
+.beverage-card{
+    background-color: transparent;
+    padding: 0;
+
+    flex: 0 0 auto;
+    width: 160px;
+}
+
+.beverage-img{
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.price {
+    background-color: var(--cream);
+    color: var(--black);
+    padding: 0.75rem 1.5rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 1rem;
+    display: inline-block;
+    width: 100%; 
+    box-sizing: border-box;
+    text-align: center;     
+}
+
+@media (max-width: 768px) {
+    .beverage-card {
+        width: 130px;
+    }
+}
+
 @media (max-width: 992px) {
     .menu-container {
         padding: 2rem;
@@ -82,9 +191,11 @@
     .menu-grid {
         grid-template-columns: repeat(2, 1fr); 
     }
+
+    .beverage-grid {
+        grid-template-columns: repeat(3, 1fr); 
+    }
 }
-
-
 
 @media (max-width: 768px) {
     .menu-container {
@@ -98,6 +209,10 @@
 
     .menu-grid {
         grid-template-columns: 1fr; 
+    }
+
+    .beverage-grid {
+        grid-template-columns: repeat(2, 1fr); 
     }
 
 }
