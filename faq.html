@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOTTE AZZURA | FAQ</title>
+  <link rel="stylesheet" href="./css/global.css"/>
+  <link rel="stylesheet" href="./css/pages/faq.css"/>
+</head>
+<body>
+   <header>
+        <img src="./image/logo.png" alt="NOTTE AZZURA" class="logo">
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="#" id="logoutBtn">Logout</a>
+        </nav>
+    </header>
+  <section class="top">
+    <div class="top-content">
+      <h1>What can we help you with?</h1>
+      <div class="search-container">
+        <input type="text" id="faq-search" class="search-input" placeholder="Type your question here...">
+        <button class="search-btn" onclick="filterFAQ()">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <main class="main-content">
+    <section class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-grid" id="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>How to place your first order?</h4>
+            <span class="icon">🍕</span>
+          </div>
+          <div class="faq-answer">
+            Step by step guide to ordering your favorite pizza.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>How can I track my delivery?</h4>
+            <span class="icon">🍕</span>
+          </div>
+          <div class="faq-answer">
+            Use the Track Order option to see real-time updates.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>What payment methods are accepted?</h4>
+            <span class="icon">🍕</span>
+          </div>
+          <div class="faq-answer">
+            We accept credit cards, debit cards, and e-wallets.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>Can I customize my pizza?</h4>
+            <span class="icon">🍕</span>
+          </div>
+          <div class="faq-answer">
+            Yes, add or remove toppings during checkout.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>Do you offer refunds?</h4>
+            <span class="icon">🍕</span>
+          </div>
+          <div class="faq-answer">
+            Refunds are available for incorrect or damaged orders.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>How to contact customer support?</h4>
+            <span class="icon">🍕</span>
+          </div>
+          <div class="faq-answer">
+            Go to the Contact Support option or call our hotline.
+          </div>
+        </div>
+
+      </div>
+
+      <p id="no-result">No matching FAQ found.</p>
+
+    </section>
+  </main>
+
+  <script src="./js/faq.js"></script>
+</body>
+</html>
