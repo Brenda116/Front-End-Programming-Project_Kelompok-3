@@ -65,7 +65,7 @@
 /* Divider Team Section */
 .team-divider {
   background: var(--red);
-  color: white;
+  color: var(--cream);
   text-align: center;
   padding: 60px 20px;
   margin: 0 auto;
@@ -175,7 +175,7 @@
     padding: 10px 15px;
     font-size: 1rem;
     border-radius: 8px;
-    border: 1px solid var(--cream);
+    border: 1px solid var(--red);
     background-color: var(--cream);
     color: var(--red);
     cursor: pointer;
@@ -282,10 +282,12 @@
   border: 1px solid var(--cream);
 }
 
-/* Responsive dalam Mobile Mode */
+/* Responsive Mobile Mode */
 @media (max-width: 768px) {
+  
+  /* Team Header */
   .team-header {
-    padding: 60px 15px 30px;
+    padding: 60px 15px 40px;
   }
 
   .team-header h1 {
@@ -297,6 +299,45 @@
     padding: 0 10px;
   }
 
+  /* Team Intro Section */
+  .team-intro {
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 15px;
+    text-align: center;
+  }
+
+  .team-intro .intro-content {
+    max-width: 100%;
+  }
+
+  .team-intro h2 {
+    font-size: 1.6rem;
+  }
+
+  .team-intro p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .team-intro .intro-image {
+    max-width: 100%;
+  }
+
+  /* Divider Section */
+  .team-divider {
+    padding: 40px 15px;
+  }
+
+  .team-divider h2 {
+    font-size: 1.6rem;
+  }
+
+  .team-divider p {
+    font-size: 1rem;
+  }
+
+  /* Team Cards Grid */
   .team-container {
     grid-template-columns: 1fr;
     gap: 25px;
@@ -321,11 +362,10 @@
     font-size: 0.9rem;
   }
 
+  /* Filters */
   .team-filters {
     text-align: center;
-    margin-right: 10px;
-    justify-content: center;
-    gap: 10px;
+    margin: 10px 0 20px;
   }
 
   .team-filters select {
@@ -334,9 +374,33 @@
     padding: 8px 12px;
   }
 
+  /* Load More Button */
   #moreBtn {
     width: auto;
     font-size: 0.85rem;
     padding: 8px 12px;
+  }
+
+  /* Join Team Section */
+  .join-team {
+    padding: 40px 15px;
+  }
+
+  .join-team h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .join-team p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .join-team .btn {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+    max-width: 140px;
+    text-align: center;
   }
 }
