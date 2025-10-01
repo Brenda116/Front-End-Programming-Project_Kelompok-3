@@ -10,6 +10,9 @@
     color: var(--black);
 }
 
+.h2{
+    color: var(--black)
+}
 
 .menu-section {
     margin-bottom: 3rem;
