@@ -37,19 +37,6 @@ h1 {
     position: absolute;
 }
 
-@media (max-width: 768px) {
-    h1 {
-        font-size: 36px;
-    }
-
-.mid {
-    margin-top: 60px;
-}
-
-.low {
-    margin-top: 250px;
-}
-
 /* Top Menu Section */
 .top-list-section {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/image/wood table.jpg');
@@ -167,6 +154,21 @@ h1 {
     background-color: var(--red);
     transform: scale(1.05);
     color: var(--green);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+
+.mid {
+    margin-top: 60px;
+}
+
+.low {
+    margin-top: 250px;
+}
+
 }
 
 @media (max-width: 992px) {
