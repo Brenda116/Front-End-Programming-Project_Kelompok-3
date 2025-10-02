@@ -71,13 +71,19 @@
     z-index: 10; 
 }
 
-.card .details {
+.card .details, .rating {
     opacity: 0; 
     max-height: 0;
     overflow: hidden; 
     margin: 0; 
-    
+
     transition: all 0.4s ease-out; 
+}
+
+.rating i {
+    color: #FFD700;       
+    font-size: 1rem;    
+    margin-bottom: 1rem;    
 }
 
 .card:hover .details {
@@ -86,11 +92,24 @@
     margin-bottom: 1rem;
 }
 
+.card:hover .rating {
+    opacity: 1;
+    max-height: 60px;
+    margin-bottom: 1rem;
+    overflow: visible;
+}
+
 .card-img {
     width: 100%;
     max-width: 300px;
     height: auto;
-    margin-bottom: 1rem;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
 }
 
 .card-body h3 {
@@ -102,6 +121,7 @@
 .card-body p {
     font-size: 0.9rem;
     line-height: 1.5;
+    margin-top: auto;
     margin-bottom: 1.5rem;
     color: var(--cream);
     opacity: 0.9;
@@ -256,6 +276,10 @@
     }
 
     .beverage-card {
-        width: 130px;
+        width: 140px;
+    }
+
+    .beverage-card .price {
+        font-size: 0.75rem;
     }
 }
