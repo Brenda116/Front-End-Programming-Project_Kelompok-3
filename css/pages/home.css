@@ -1,3 +1,5 @@
+
+
 body {
     background-color: var(--cream);
 }
@@ -26,4 +28,152 @@ body {
 
 .low {
     margin-top: 250px;
+}
+
+/* Top Menu Section */
+.top-list-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/image/wood table.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 80px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.section-header {
+    color: var(--cream);
+    margin-bottom: 70px;
+}
+
+.section-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.top-menu {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--cream);
+    margin-bottom: 120px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.top-menu-card {
+    background-color: var(--red);
+    opacity: 0.80;
+    backdrop-filter: blur(20px);
+    
+    border-radius: 25px;
+    color: var(--cream);
+    width: 320px;
+    padding: 100px 25px 30px;
+    position: relative;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: transform 0.3s ease;
+    margin: 10px;
+}
+
+.top-menu-card:hover {
+    transform: translateY(-10px);
+}
+
+.top-menu-card.featured {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+.top-menu-card.featured:hover {
+    transform: scale(1.1) translateY(-10px);
+}
+
+.card-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    
+    
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.card-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: var(--green);
+}
+.card-content p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+.menu-button {
+    display: inline-block;
+    background-color: var(--cream);
+    color: var(--red);
+    padding: 15px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.menu-button:hover {
+    background-color: var(--red);
+    transform: scale(1.05);
+    color: var(--green);
+}
+
+@media (max-width: 992px) {
+
+    .top-list-section {
+        background-attachment: scroll;
+    }
+
+    .card-container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .promo-card {
+        margin-top: 100px;
+    }
+
+    .promo-card:first-child {
+        margin-top: 0;
+    }
+
+    .promo-card.featured {
+        transform: scale(1);
+    }
+    
+    .promo-card.featured:hover {
+        transform: scale(1) translateY(-10px);
+    }
+
 }
