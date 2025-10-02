@@ -39,7 +39,8 @@ h1 {
 
 /* Top Menu Section */
 .top-list-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/image/wood table.jpg');
+    background-image: linear-gradient(var(--cream), rgba(0, 0, 0, 0.6)), url('/image/tablecloth.jpg');
+    /* background-color: var(--green-dark); */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -50,29 +51,25 @@ h1 {
 
 .section-header {
     color: var(--cream);
-    margin-bottom: 70px;
+    margin-bottom: 150px;
 }
 
 .section-title {
-    font-size: 3.5rem;
+    font-size: 50px;
     font-weight: 800;
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 0;
+    text-shadow: none;
+    color: var(--red);
 }
 
 .section-subtitle {
-    font-size: 1.2rem;
+    font-size: 19px;
     font-weight: 400;
     opacity: 0.9;
     max-width: 600px;
     margin: 0 auto;
-}
-
-.top-menu {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--cream);
-    margin-bottom: 120px;
+    color: var(--red);
 }
 
 .card-container {
@@ -105,7 +102,7 @@ h1 {
 
 .top-menu-card.featured {
     transform: scale(1.1);
-    z-index: 10;
+    z-index: 1;
 }
 
 .top-menu-card.featured:hover {
@@ -132,6 +129,7 @@ h1 {
     font-weight: 700;
     color: var(--green);
 }
+
 .card-content p {
     font-size: 0.9rem;
     line-height: 1.6;
@@ -182,19 +180,19 @@ h1 {
         gap: 0;
     }
 
-    .promo-card {
+    .top-menu-card {
         margin-top: 100px;
     }
 
-    .promo-card:first-child {
+    .top-menu-card:first-child {
         margin-top: 0;
     }
 
-    .promo-card.featured {
+    .top-menu-card.featured {
         transform: scale(1);
     }
     
-    .promo-card.featured:hover {
+    .top-menu-card.featured:hover {
         transform: scale(1) translateY(-10px);
     }
 
