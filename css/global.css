@@ -4,7 +4,7 @@
     --red: #821F06;
     --green: #7d8d36;
     --green-dark: #5C6925;
-    --cream: #E1D9CB;
+    --cream: #e1d9cb;
     --black: #131313;
 }
 
@@ -85,7 +85,7 @@ header {
     padding-right: 30px;
     position: fixed;
     width: 100%;
-    z-index: 5;
+    z-index: 1000;
 }
 
 nav {
