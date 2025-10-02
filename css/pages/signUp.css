@@ -4,18 +4,28 @@ body {
     height: 100vh;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .container {
     position: relative;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     left: 70px;
 }
 
 .signUp-form {
   background-color: #f4f1eb;
     padding: 40px 60px;
-    padding-left: 220px;
+    /* padding-left: 220px; */
     border-radius: 30px;
-    width: 350px;
     position: relative;
     z-index: 1;
     box-shadow: 0 8px 20px rgba(0,0,0,0.25);
@@ -56,28 +66,24 @@ body {
 
     .signUp-img img {
         position: absolute;
-        margin-left: 123px;
-        margin-top: -350px;
-        width: 400px;
+        top: 18%;
+        left: 50%;
+        transform: translate(-50%, -55%);
+        width: 365px;
         z-index: 2;
-        justify-content: center;
-        align-items: center;
-        transform: rotate(70deg);
+        transform-origin: center center;
+        /* transform: rotate(70deg); */
     }
 
     .signUp-form {
-        width: 280px;
-        height: 450px;
         padding: 40px 30px;
-        padding-left: 30px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
         text-align: center;
         padding-bottom: 30px;
-        top: 65px;
-        margin-top: 200px;
-        margin-bottom: 130px;
+        margin-top: 180px;
+        margin-bottom: 50px;
     }
 }

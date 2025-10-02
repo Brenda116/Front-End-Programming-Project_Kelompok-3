@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NOTTE AZZURA | Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/pages/home.css"/>
     <link rel="stylesheet" href="/css/global.css"/>
 </head>
 <body>
     <header>
         <img src="/image/logo.png" alt="NOTTE AZZURA" class="logo">
-        <nav>
-            <a href="#home" class="active">Home</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav id="navbar">
+            <a href="home.html" class="active">Home</a>
             <a href="menu.html">Menu</a>
             <a href="gallery.html">Gallery</a>
             <a href="services.html">Services</a>
@@ -21,12 +23,14 @@
     </header>
     <main>
         <div class="container">
+            <h1>WELCOME TO PIZZA PARADISE!</h1>
+            <p>Peek into this heavenly world of pizza!</p>
             <div class="pizza-club">
-                <img src="/image/pizza.png" alt="Pizza" class="low">
-                <img src="/image/pizza.png" alt="Pizza" class="mid">
-                <img src="/image/pizza.png" alt="Pizza" class="high">
-                <img src="/image/pizza.png" alt="Pizza" class="mid">
-                <img src="/image/pizza.png" alt="Pizza" class="low">
+                <img src="/image/pizza1.png" alt="Pizza">
+                <img src="/image/pizza2.png" alt="Pizza">
+                <img src="/image/pizza3.png" alt="Pizza">
+                <img src="/image/pizza4.png" alt="Pizza">
+                <img src="/image/pizza1.png" alt="Pizza">
             </div>
         </div>
 
@@ -71,6 +75,8 @@
     <footer>
         <p>&copy; 2025 NOTTE AZZURA | All Rights Reserved</p>
     </footer>
+    <script src="/js/navBar.js"></script>
+    <script src="/js/pizzaAnim.js"></script>
     <script src="/js/logout.js"></script>
 </body>
 </html>
