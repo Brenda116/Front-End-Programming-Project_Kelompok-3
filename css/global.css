@@ -5,6 +5,7 @@
     --green: #7d8d36;
     --green-dark: #5C6925;
     --cream: #e1d9cb;
+    --cream-dark: #aea392;
     --black: #131313;
 }
 
@@ -61,14 +62,14 @@ body {
     background: #fff0f0;
     color: #dc2626;
     border: 1px solid #ffd6d6;
-    width: 102%;
+    width: 100%;
 }
 
 .notice.ok {
     background: #f0fff6;
     color: #16a34a;
     border: 1px solid #bbf0d0;
-    width: 102%;
+    width: 100%;
 }
 
 .logo {
