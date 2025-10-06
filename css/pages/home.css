@@ -79,7 +79,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 80px;
     flex-wrap: wrap;
     margin-bottom: 60px;
 }
@@ -184,16 +184,16 @@ h1 {
     }
 
     .top-menu-card {
-        margin-top: 100px;
+        margin-top: 110px;
     }
 
-    .top-menu-card:first-child {
+    /* .top-menu-card:first-child {
         margin-top: 0;
     }
 
     .top-menu-card.featured {
         transform: scale(1);
-    }
+    } */
     
     .top-menu-card.featured:hover {
         transform: scale(1) translateY(-10px);

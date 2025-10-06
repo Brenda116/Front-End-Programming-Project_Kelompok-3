@@ -6,6 +6,7 @@
 }
 
 .page-title {
+    margin-top: 200px;
     text-align: center;    
     font-size: 60px;         
     color: var(--red);      
@@ -100,13 +101,14 @@
 .card-img {
     width: 100%;
     max-width: 350px;
-    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
     align-items: center;
     transition: transform 0.3 ease;
 }
 
 .card:hover .card-img {
-    transform: scale(1.23);
+    transform: scale(1.24);
 }
 
 .card-body {
@@ -118,17 +120,23 @@
 
 .card-body h3 {
     font-size: 1.5rem;
-    margin-bottom: 0.75rem;
+    margin-top: 13px;
     color: var(--cream);
+    min-height: 5rem;
 }
 
 .card-body p {
     font-size: 0.9rem;
     line-height: 1.5;
-    margin-top: auto;
+    /* margin-top: auto; */
     margin-bottom: 1.5rem;
     color: var(--cream);
     opacity: 0.9;
+    flex-grow: 1;
+}
+
+.card:hover .card-body {
+    margin-top: 40px;
 }
 
 .price {
@@ -205,6 +213,9 @@
     text-align: center;
     flex: 0 0 auto;
     width: 160px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .beverage-img{
@@ -218,9 +229,14 @@
 .beverage-card p {
     font-size: 1rem;
     color: var(--cream);
-    margin-top: -10px;
+    margin-top: -5px;
     margin-bottom: 10px;
     font-weight: bold;
+    min-height: 30px;
+}
+
+.beverage-card .price {
+  margin-top: auto;
 }
 
 .beverage-card:hover {
