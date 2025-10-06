@@ -41,7 +41,7 @@ h1 {
     position: absolute;
 }
 
-/* Top Menu Section */
+/* Top Menu Section (Mark's) */
 .top-list-section {
     background-image: linear-gradient(var(--cream), rgba(0, 0, 0, 0.6)), url('/image/tablecloth.jpg');
     /* background-color: var(--green-dark); */
@@ -140,22 +140,43 @@ h1 {
     opacity: 0.8;
 }
 
+.buttons-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;  
+    gap: 17px;           
+}
+
 .menu-button {
     display: inline-block;
     background-color: var(--cream);
     color: var(--red);
-    padding: 15px 40px;
+    padding: 13px 30px;
     border-radius: 30px;
     text-decoration: none;
-    font-weight: 700;
-    font-size: 1rem;
+    font-weight: 900;
+    font-size: 25px;
     transition: all 0.3s ease;
 }
 
 .menu-button:hover {
     background-color: var(--red);
-    transform: scale(1.05);
+    transform: scale(1.15);
     color: var(--green);
+}
+
+.promo-button {
+    display: inline-block;
+    background-color: transparent; 
+    color: var(--cream); 
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.promo-button:hover {
+    color: var(--green); 
 }
 
 @media (max-width: 768px) {
