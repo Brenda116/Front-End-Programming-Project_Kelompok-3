@@ -90,7 +90,7 @@ header {
 
 nav {
     display: flex;
-    gap: 50px;
+    gap: 45px;
     align-items: center;
 }
 
@@ -107,6 +107,7 @@ nav a:hover {
 
 nav a.active {
     font-weight: bold;
+    color: #f2c223;
 }
 
 #menu-icon {
@@ -114,6 +115,7 @@ nav a.active {
     color: var(--cream);
     display: none;
     cursor: pointer;
+    font-weight: bold;
     margin: 24px;
 }
 

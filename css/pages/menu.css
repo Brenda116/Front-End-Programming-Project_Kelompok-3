@@ -48,8 +48,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 2rem;
-
-
 }
 
 .card {
@@ -101,8 +99,14 @@
 
 .card-img {
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
     height: auto;
+    align-items: center;
+    transition: transform 0.3 ease;
+}
+
+.card:hover .card-img {
+    transform: scale(1.23);
 }
 
 .card-body {
@@ -208,6 +212,7 @@
     max-width: 150px;
     height: auto;
     margin-bottom: 1rem;
+    transition: transform 0.3s ease;
 }
 
 .beverage-card p {
@@ -226,6 +231,10 @@
     border-radius: 25px;
     background-color: var(--cream);
     transition: transform 0.3s ease; 
+}
+
+.beverage-card:hover .beverage-img {
+    transform: scale(1.1);
 }
 
 .beverage-card:hover p {
