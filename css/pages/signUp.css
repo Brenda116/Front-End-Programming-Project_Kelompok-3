@@ -2,6 +2,11 @@ body {
     display: flex;
     background-color: var(--red);
     height: 100vh;
+    background-image: url('https://t3.ftcdn.net/jpg/01/59/31/08/360_F_159310820_0nVwY9SSfBiSqiLLcLpLUWn0vUBAUr3K.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 main {
@@ -18,17 +23,17 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
-    left: 70px;
+    right: 70px;
 }
 
 .signUp-form {
-  background-color: #f4f1eb;
+    background-color: #f4f1eb;
     padding: 40px 60px;
-    /* padding-left: 220px; */
+    padding-right: 220px;
     border-radius: 30px;
     position: relative;
     z-index: 1;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.6);
     text-align: left;
 }
 
@@ -49,11 +54,12 @@ main {
 
 .signUp-img img {
     position: absolute;
-    left: -290px;
-    top: 49%;
+    right: -140px;
+    top: 50%;
     transform: translateY(-50%);
-    width: 600px;
+    width: 325px;
     z-index: 2;
+    filter: drop-shadow(0 5px 8px rgba(0, 0, 0, 0.8));
 }
 
 @media (max-width: 768px) {
@@ -72,7 +78,6 @@ main {
         width: 365px;
         z-index: 2;
         transform-origin: center center;
-        /* transform: rotate(70deg); */
     }
 
     .signUp-form {
