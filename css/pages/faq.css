@@ -1,3 +1,36 @@
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 :root {
   --red: #821F06;
   --green: #7d8d36;
@@ -9,23 +42,28 @@
 .top {
   background: linear-gradient(135deg, #E1D9CB 0%, #e8e2d6 100%);
   text-align: center;
-  padding: 60px 20px;
+  padding: 160px 20px 60px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 .top h1 {
   color: var(--red);
   font-size: 2.5rem;
   margin-bottom: 40px;
+  animation: fadeInUp 0.8s ease-out;
 }
+
 .search-container {
   display: flex;
   gap: 10px;
   max-width: 600px;
   margin: 0 auto;
+  animation: fadeInUp 1s ease-out;
 }
+
 .search-input {
   flex: 1;
   padding: 15px 20px;
@@ -37,12 +75,19 @@
   color: var(--black);
   transition: all 0.3s ease;
 }
-.search-input::placeholder {
-  color: black;
+
+.search-input:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 10px rgba(125, 141, 54, 0.4);
 }
+
+.search-input::placeholder {
+  color: rgb(118, 118, 118);
+}
+
 .search-btn {
   background: var(--green);
-  color: var(--black);
+  color: var(--cream);
   border: none;
   padding: 15px 25px;
   border-radius: 10px;
@@ -52,13 +97,13 @@
   background-clip: padding-box;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+
 .search-btn:hover {
   background: var(--green-dark);
   color: var(--cream);
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(0,0,0,0.25);
 }
-
 
 .main-content {
   background-color: var(--cream);
@@ -79,9 +124,11 @@
   font-size: 3rem;
   margin-bottom: 60px;
   font-weight: 700;
-  color: var(--cream);
+  color: var(--red);
   letter-spacing: 2px;
+  animation: fadeInUp 0.8s ease-out;
 }
+
 .faq-grid {
   max-width: 900px;
   margin: 0 auto;
@@ -96,6 +143,7 @@
   font-weight: 600;
   margin-top: 20px;
   font-size: 1rem;
+  animation: fadeInUp 0.5s ease-out;
 }
 
 .faq-item {
@@ -106,28 +154,67 @@
   border: 1px solid #eee;
   cursor: pointer;
   transition: all 0.3s ease;
+  animation: slideInLeft 0.8s ease-out;
+  animation-fill-mode: both;
 }
+
 .faq-item:hover {
   transform: translateX(5px);
   border-color: var(--green);
   box-shadow: 0 6px 20px rgba(125,141,54,0.25);
 }
+
+.faq-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.faq-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.faq-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.faq-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.faq-item:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.faq-item:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.faq-item:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.faq-item:nth-child(8) {
+  animation-delay: 0.8s;
+}
+
 .faq-question {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .faq-question h4 {
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--red);
   margin: 0;
 }
+
 .faq-question .icon {
   font-size: 1.5rem;
   color: var(--green-dark);
   transition: transform 0.3s ease;
 }
+
 .faq-answer {
   max-height: 0;
   opacity: 0;
