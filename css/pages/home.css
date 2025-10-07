@@ -182,7 +182,7 @@ h1 {
 .card-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     gap: 80px;
     flex-wrap: wrap;
     margin-bottom: 60px;
@@ -190,17 +190,16 @@ h1 {
 
 .top-menu-card {
     background-color: var(--red);
-    opacity: 0.80;
-    backdrop-filter: blur(20px);
-    
+
     border-radius: 25px;
     color: var(--cream);
-    width: 320px;
-    padding: 100px 25px 30px;
+    width: 330px;
+    padding: 100px 25px 20px;
     position: relative;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     transition: transform 0.3s ease;
     margin: 10px;
+    max-height: 400px;
 }
 
 .top-menu-card:hover {
@@ -221,26 +220,27 @@ h1 {
     height: 180px;
     border-radius: 50%;
     
-    
     position: absolute;
     top: -90px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 1.8rem;
     margin-bottom: 15px;
 }
 
 .card-content h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    margin-top: 0;
     margin-bottom: 10px;
     font-weight: 700;
     color: var(--green);
+    min-height: 3em;
 }
 
 .card-content p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     line-height: 1.6;
     opacity: 0.8;
+    margin-bottom: 20px;
 }
 
 .buttons-container {
