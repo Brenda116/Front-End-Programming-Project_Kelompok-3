@@ -477,7 +477,10 @@ body {
 }
 
 .event-promo:hover {
-    animation: glow 2s infinite;
+    transform: scale(1.02);
+    box-shadow: 
+        0 15px 50px rgba(0, 0, 0, 0.2),
+        0 0 0 1px rgba(0, 0, 0, 0.08);
 }
 
 .event-promo h3 {
