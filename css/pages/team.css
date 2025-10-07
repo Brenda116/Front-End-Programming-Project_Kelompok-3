@@ -1,4 +1,4 @@
-keyframes fadeInUp {
+@keyframes fadeInUp {
     from {
         opacity: 0;
         transform: translateY(30px);
@@ -136,6 +136,7 @@ keyframes fadeInUp {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 15px;
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .team-divider p {
@@ -143,6 +144,7 @@ keyframes fadeInUp {
   max-width: 700px;
   margin: 0 auto;
   line-height: 1.6;
+  animation: fadeInUp 0.8s ease-out;
 }
 
 /* Team Section Background */
@@ -324,11 +326,13 @@ keyframes fadeInUp {
 .join-team h2 {
   font-size: 2rem;
   margin-bottom: 15px;
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .join-team p {
   font-size: 1.1rem;
   margin-bottom: 25px;
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .join-team .btn {
@@ -342,6 +346,7 @@ keyframes fadeInUp {
   transition: all 0.3s ease;
   text-decoration: none;
   display: inline-block;
+  animation: scaleIn 1.2s ease-out;
 }
 
 .join-team .btn:hover {
@@ -398,10 +403,12 @@ keyframes fadeInUp {
 
   .team-divider h2 {
     font-size: 1.6rem;
+    animation: fadeInUp 0.8s ease-out;
   }
 
   .team-divider p {
     font-size: 1rem;
+    animation: fadeInUp 0.8s ease-out;
   }
 
   /* Team Cards Grid */
@@ -409,25 +416,25 @@ keyframes fadeInUp {
   grid-template-columns: 1fr;
   gap: 25px;
   padding: 20px;
-}
+  }
 
 .team-card {
   padding: 15px;
-}
+  }
 
-.team-card img {
-  width: 120px;
-  height: 120px;
-  margin: 15px auto 8px;
-}
+  .team-card img {
+    width: 120px;
+    height: 120px;
+    margin: 15px auto 8px;
+  }
 
-.team-card h2 {
-  font-size: 1.5rem;
-}
+  .team-card h2 {
+    font-size: 1.5rem;
+  }
 
-.team-card p {
-  font-size: 1rem;
-}
+  .team-card p {
+    font-size: 1rem;
+  }
 
   /* Filters */
   .team-filters {
