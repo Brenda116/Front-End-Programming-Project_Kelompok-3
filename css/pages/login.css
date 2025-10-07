@@ -9,6 +9,13 @@ body {
     background-attachment: fixed;
 }
 
+.logoStart {
+    width: 110px;
+    margin: 20px 24px;
+    height: auto;
+    position: absolute;
+}
+
 main {
     display: flex;
     justify-content: center;
@@ -35,6 +42,12 @@ main {
     z-index: 1;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.6);
     text-align: left;
+    min-height: 300px;
+    transition: all 0.3s ease;
+}
+
+.login-form:has(.notice) {
+    min-height: 350px;
 }
 
 .login-form p {
@@ -55,9 +68,9 @@ main {
 .login-img img {
     position: absolute;
     left: -150px;
-    top: 51%;
+    top: 50%;
     transform: translateY(-50%);
-    width: 365px;
+    width: 353px;
     z-index: 2;
     filter: drop-shadow(0 5px 8px rgba(0, 0, 0, 0.8));
 }
@@ -72,24 +85,28 @@ main {
 
     .login-img img {
         position: absolute;
-        top: 19%;
-        left: 51%;
+        top: 23%;
+        left: 50%;
         transform: translate(-50%, -55%);
-        width: 365px;
+        width: 330px;
         z-index: 2;
     }
 
     .login-form {
-        width: 340px;
-        height: 520px;
+        width: 323px;
+        min-height: 480px;
         padding: 40px 30px;
-        padding-left: 30px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
         text-align: center;
         padding-bottom: 30px;
-        top: 65px;
+        top: 48px;
+    }
+
+    .login-form:has(.notice) {
+        min-height: 560px;
+        min-width: auto;
     }
 }

@@ -9,6 +9,13 @@ body {
     background-attachment: fixed;
 }
 
+.logoStart {
+    width: 110px;
+    margin: 20px 24px;
+    height: auto;
+    position: absolute;
+}
+
 main {
     display: flex;
     justify-content: center;
@@ -71,13 +78,7 @@ main {
     }
 
     .signUp-img img {
-        position: absolute;
-        top: 18%;
-        left: 50%;
-        transform: translate(-50%, -55%);
-        width: 365px;
-        z-index: 2;
-        transform-origin: center center;
+        display: none;
     }
 
     .signUp-form {
@@ -88,7 +89,7 @@ main {
         align-items: center;
         text-align: center;
         padding-bottom: 30px;
-        margin-top: 180px;
+        margin-top: 50px;
         margin-bottom: 50px;
     }
 }

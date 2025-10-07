@@ -56,20 +56,20 @@ body {
     border-radius: 8px;
     margin-bottom: 10px;
     font-size: 14px;
+    width: 100%;
+    text-align: center;
 }
 
 .notice.error {
     background: #fff0f0;
     color: #dc2626;
     border: 1px solid #ffd6d6;
-    width: 100%;
 }
 
 .notice.ok {
     background: #f0fff6;
     color: #16a34a;
     border: 1px solid #bbf0d0;
-    width: 100%;
 }
 
 .logo {
