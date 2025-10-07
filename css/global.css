@@ -132,6 +132,23 @@ footer {
     width: 100%;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--red); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--cream);
+    transition: background 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--cream-dark);
+}
+
 @media (max-width: 768px) {
     .btn {
         width: 100%;
