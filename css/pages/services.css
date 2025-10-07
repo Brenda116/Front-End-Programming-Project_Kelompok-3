@@ -16,7 +16,7 @@ html, body {
 .services {
   padding: 50px 10%;
   text-align: center;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/pizzaBackgorundServices.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../../image/pizzaBackgorundServices.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
