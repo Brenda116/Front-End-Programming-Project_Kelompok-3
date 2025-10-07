@@ -21,7 +21,7 @@ h1 {
 .container p {
     text-align: center;
     color: var(--cream);
-    font-size: 40px;
+    font-size: 20px;
     margin: 10px 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -38,6 +38,45 @@ h1 {
     height: auto;
     transition: all 0.8s ease;
     position: absolute;
+}
+
+.container-two {
+    margin: 80px 0;
+}
+
+.container-two p {
+    text-align: center;
+    color: var(--cream);
+    font-size: 20px;
+    margin: 10px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.home-disp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.home-disp-img {
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+    position: static;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.home-disp .home-par-disp {
+    max-width: 500px;
+    color: var(--cream);
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 /* Top Menu Section (Mark's) */
@@ -181,6 +220,14 @@ h1 {
 @media (max-width: 768px) {
     h1 {
         font-size: 36px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .container p {
+        font-size: 16px !important;
+        margin-left: 30px;
+        margin-right: 30px;
     }
 
 .mid {
