@@ -1,3 +1,56 @@
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 body {
     background-image: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGYtczEyNS1ha2U3MDExLWEuanBn.jpg');
     background-size: cover;
@@ -12,6 +65,7 @@ h1 {
     font-size: 50px;
     margin: 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 1s ease-out;
 }
 
 .container {
@@ -24,6 +78,7 @@ h1 {
     font-size: 20px;
     margin: 10px 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 1.2s ease-out;
 }
 
 .pizza-club {
@@ -50,6 +105,7 @@ h1 {
     font-size: 20px;
     margin: 10px 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 1s ease-out;
 }
 
 .home-disp {
@@ -69,6 +125,14 @@ h1 {
     border-radius: 20px;
     position: static;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    animation: slideInRight 1s ease-out;
+    transition: all 0.5s ease;
+}
+
+.home-disp-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
 }
 
 .home-disp .home-par-disp {
@@ -77,6 +141,7 @@ h1 {
     text-align: justify;
     font-size: 18px;
     line-height: 1.6;
+    animation: slideInLeft 1s ease-out;
 }
 
 /* Top Menu Section (Mark's) */
@@ -98,7 +163,7 @@ h1 {
 
 .section-title {
     font-size: 50px;
-    font-weight: 800;
+    font-weight: 900;
     margin-bottom: 10px;
     margin-top: 0;
     text-shadow: none;
