@@ -1,3 +1,47 @@
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 .about-page {
   background-color: var(--cream);
 }
@@ -28,6 +72,7 @@ html, body {
   box-shadow: 0 10px 30px rgba(0,0,0,0.4);
   z-index: 1000;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: scaleIn 0.8s ease-out;
 }
 
 .about-link:hover {
@@ -102,6 +147,7 @@ html, body {
   align-items: flex-end;
   justify-content: center;
   min-height: 80vh;
+  animation: slideInRight 1s ease-out;
 }
 
 .about-left h1 {
@@ -110,6 +156,7 @@ html, body {
   line-height: 1.1;
   margin-bottom: 15px;
   color: var(--cream);
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .about-left .desc {
@@ -118,12 +165,14 @@ html, body {
   margin-bottom: 25px;
   max-width: 480px;
   justify-content: right;
+  animation: fadeInUp 1s ease-out;
 }
 
 .about-left .about-buttons {
   display: flex;
   gap: 25px;
   justify-content: flex-end;
+  animation: fadeInUp 1.2s ease-out;
 }
 
 .about-left button {
@@ -176,6 +225,7 @@ html, body {
   font-weight: 800;
   margin-bottom: 20px;
   color: var(--cream);
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .about-intro p {
@@ -183,6 +233,7 @@ html, body {
   margin: 0 auto;
   line-height: 1.8;
   font-size: 1.1rem;
+  animation: fadeInUp 1s ease-out;
 }
 
 /* Our Vision Section */
@@ -200,6 +251,7 @@ html, body {
   flex: 1;
   min-width: 300px;
   text-align: left;
+  animation: slideInLeft 1s ease-out;
 }
 
 .vision-left h2 {
@@ -220,6 +272,7 @@ html, body {
   min-width: 300px;
   display: flex;
   justify-content: center;
+  animation: slideInRight 1s ease-out;
 }
 
 .vision-right img {
@@ -227,6 +280,7 @@ html, body {
   max-width: 500px;
   border-radius: 16px;
   object-fit: cover;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 /* Our History Section */
@@ -245,6 +299,7 @@ html, body {
   min-width: 300px;
   display: flex;
   justify-content: center;
+  animation: slideInLeft 1s ease-out;
 }
 
 .history-left img {
@@ -252,12 +307,19 @@ html, body {
   max-width: 650px;
   border-radius: 16px;
   object-fit: cover;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.history-left img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .history-right {
   flex: 1;
   min-width: 300px;
   text-align: left;
+  animation: slideInRight 1s ease-out;
 }
 
 .history-right h2 {
@@ -287,6 +349,7 @@ html, body {
   font-weight: 800;
   margin-bottom: 20px;
   color: var(--cream);
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .about-faq p {
@@ -294,6 +357,7 @@ html, body {
   margin: 0 auto 30px auto;
   line-height: 1.8;
   font-size: 1.1rem;
+  animation: fadeInUp 1s ease-out;
 }
 
 .faq-btn {
@@ -307,6 +371,7 @@ html, body {
   transition: all 0.3s ease;
   text-decoration: none;
   display: inline-block;
+  animation: scaleIn 1.2s ease-out;
 }
 
 .faq-btn:hover {
