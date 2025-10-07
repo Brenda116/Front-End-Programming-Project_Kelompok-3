@@ -1,3 +1,36 @@
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .page-wrapper {
     background-image: linear-gradient(rgba(255, 217, 203, 0.7), rgba(255, 217, 203, 0.7)), url('/image/promotionsBackground.jpg');
     background-color: var(--cream);
@@ -10,7 +43,8 @@
     text-align: center;    
     font-size: 60px;         
     color: var(--red);      
-    font-weight: 700;    
+    font-weight: 700;
+    animation: fadeInUp 1s ease-out;   
 }
 
 .promo-container {
@@ -42,6 +76,7 @@
     overflow: hidden;
     transition: transform 0.3s ease;
     background-color: var(--red);
+    animation: scaleIn 0.8s ease-out;
 }
 
 .promo-card:hover {
@@ -61,6 +96,11 @@
     object-fit: cover; 
     object-position: center; 
     display: block;
+    transition: transform 0.4s ease;
+}
+
+.promo-card:hover .promo-img img {
+  transform: scale(1.1);
 }
 
 .promo-content {

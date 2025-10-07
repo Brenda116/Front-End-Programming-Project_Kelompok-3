@@ -1,3 +1,47 @@
+keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 /* Header Team */
 .team-header {
     text-align: center;
@@ -18,6 +62,7 @@
     margin-bottom: 20px;
     color: var(--cream);
     font-weight: 900;
+    animation: scaleIn 1s ease-out;
 }
 
 .team-header p {
@@ -26,6 +71,7 @@
     margin: 0 auto;
     line-height: 1.6;
     color: var(--cream);
+    animation: scaleIn 1s ease-out;
 }
 
 /* Team Introduction Section */
@@ -49,6 +95,7 @@
   color: var(--red);
   margin-bottom: 20px;
   font-weight: bold;
+  animation: slideInLeft 1s ease-out;
 }
 
 .team-intro p {
@@ -56,17 +103,25 @@
   color: var(--black);
   margin-bottom: 15px;
   text-align: justify;
+  animation: slideInLeft 1s ease-out;
 }
 
 .team-intro .intro-image {
   flex: 1;
   max-width: 700px;
+  animation: slideInRight 1s ease-out;
 }
 
 .team-intro .intro-image img {
   width: 100%;
   border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  transition: transform 0.4s ease;
+}
+
+.team-intro .intro-image img:hover { 
+  transform: scale(1.05); 
+  transition: transform 0.4s ease;
 }
 
 /* Divider Team Section */
@@ -142,18 +197,21 @@
     height: 150px;
     object-fit: cover;
     margin: 20px auto 10px;
+    transition: transform 0.4s ease;
 }
 
 .team-card h2 {
     font-size: 1.5rem;
     margin: 15px 0 5px;
     color: var(--cream);
+    transition: color 0.3s ease;
 }
 
 .team-card .role {
     font-weight: 600;
     color: var(--green);
     margin-bottom: 15px;
+    transition: color 0.3s ease;
 }
 
 .team-card p:not(.role) {
