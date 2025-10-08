@@ -92,7 +92,30 @@ h1 {
     width: 350px;
     height: auto;
     transition: all 0.8s ease;
+    position: static;
+}
+
+.pizza-each {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.8s ease;
+}
+
+.pizza-each img {
+    width: 350px;
+    height: auto;
+    transition: all 0.8s ease;
+}
+
+.pizza-name {
+    color: var(--cream);
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
 .container-two {
@@ -182,7 +205,7 @@ h1 {
 .card-container {
     display: flex;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
     gap: 80px;
     flex-wrap: wrap;
     margin-bottom: 60px;
@@ -190,16 +213,17 @@ h1 {
 
 .top-menu-card {
     background-color: var(--red);
-
+    opacity: 0.80;
+    backdrop-filter: blur(20px);
+    
     border-radius: 25px;
     color: var(--cream);
-    width: 330px;
-    padding: 100px 25px 20px;
+    width: 320px;
+    padding: 100px 25px 30px;
     position: relative;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     transition: transform 0.3s ease;
     margin: 10px;
-    max-height: 400px;
 }
 
 .top-menu-card:hover {
@@ -220,29 +244,26 @@ h1 {
     height: 180px;
     border-radius: 50%;
     
+    
     position: absolute;
     top: -90px;
     left: 50%;
     transform: translateX(-50%);
+    font-size: 1.8rem;
     margin-bottom: 15px;
 }
 
 .card-content h2 {
-    font-size: 1.9rem;
-    margin-top: 10px;
-    margin-bottom: -10px;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
     font-weight: 700;
     color: var(--green);
-    min-height: 3em;
-    line-height: 1.3;
 }
 
 .card-content p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 1.6;
     opacity: 0.8;
-    margin-bottom: 15px;
-    font-style: italic;
 }
 
 .buttons-container {
