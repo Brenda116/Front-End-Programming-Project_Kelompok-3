@@ -100,6 +100,16 @@ main {
     filter: drop-shadow(0 5px 8px rgba(0, 0, 0, 0.8));
 }
 
+.start {
+    color: var(--black);
+    justify-items: center;
+    padding: 20px 24px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 20px 0;
+}
+
 @media (max-width: 768px) {
     .container {
         display: flex;
