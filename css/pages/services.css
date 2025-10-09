@@ -272,11 +272,11 @@ html, body {
   margin-top: 20px;
 }
 
-.service-pizza { background-color: white; }
-.service-delivery { background-color: white; }
-.service-chefs { background-color: white; }
-.service-catering { background-color:white; }
-.service-reservation { background-color: white; }
+.service-pizza { background-color: var(--cream); }
+.service-delivery { background-color: var(--cream); }
+.service-chefs { background-color: var(--cream); }
+.service-catering { background-color: var(--cream); }
+.service-reservation { background-color: var(--cream); }
 
 @media (max-width: 768px) {
   .services {
