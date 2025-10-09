@@ -213,8 +213,8 @@ h1 {
 
 .top-menu-card {
     background-color: var(--red);
-    opacity: 0.80;
-    backdrop-filter: blur(20px);
+    /* opacity: 0.80;
+    backdrop-filter: blur(20px); */
     
     border-radius: 25px;
     color: var(--cream);
