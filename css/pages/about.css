@@ -399,9 +399,31 @@ html, body {
     max-width: 100%;
   }
 
+  .about-left h1 {
+    font-size: 5.5rem !important;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .about-left .desc {
+    font-size: 1.2rem !important;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: justify;
+    text-align-last: right;
+  }
+
   .about-left .about-buttons {
     justify-content: center;
+    font-size: 1rem;
+    gap: 20px;
     flex-wrap: wrap;
+  }
+
+  .about-left button {
+    font-size: 1.1rem;
+    padding: 12px 24px;
+    border-radius: 30px;
   }
 
   /* Our Vision Section */

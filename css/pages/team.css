@@ -359,15 +359,15 @@
   
   /* Team Header */
   .team-header {
-    padding: 60px 15px 40px;
+    padding: 200px 15%;
   }
 
   .team-header h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .team-header p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 0 10px;
   }
 
