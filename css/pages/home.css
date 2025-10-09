@@ -170,7 +170,6 @@ h1 {
 /* Top Menu Section (Mark's) */
 .top-list-section {
     background-image: linear-gradient(var(--cream), rgba(0, 0, 0, 0.6)), url('/image/tablecloth.jpg');
-    /* background-color: var(--green-dark); */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -213,9 +212,6 @@ h1 {
 
 .top-menu-card {
     background-color: var(--red);
-    /* opacity: 0.80;
-    backdrop-filter: blur(20px); */
-    
     border-radius: 25px;
     color: var(--cream);
     width: 320px;
@@ -342,14 +338,6 @@ h1 {
     .top-menu-card {
         margin-top: 110px;
     }
-
-    /* .top-menu-card:first-child {
-        margin-top: 0;
-    }
-
-    .top-menu-card.featured {
-        transform: scale(1);
-    } */
     
     .top-menu-card.featured:hover {
         transform: scale(1) translateY(-10px);
